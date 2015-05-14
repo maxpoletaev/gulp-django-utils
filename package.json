@@ -1,0 +1,15 @@
+{
+  "name": "gulp-django-utils",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "author": {
+    "name": "Maxim Poletaev",
+    "email": "zenwalker2@gmail.com",
+    "url": "http://zenwalker.ru"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/zenwalker/django-frontserver-utils.git"
+  },
+  "license": "MIT"
+}
