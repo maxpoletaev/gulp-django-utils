@@ -1,5 +1,5 @@
 {
-  "name": "gulp-django-utils",
+  "name": "gulp-util-django",
   "version": "0.0.1",
   "main": "./index.js",
   "author": {
@@ -9,7 +9,7 @@
   },
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/zenwalker/django-frontserver-utils.git"
+    "url" : "https://github.com/zenwalker/gulp-util-django.git"
   },
   "license": "MIT"
 }
