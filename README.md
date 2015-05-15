@@ -1,6 +1,6 @@
 # gulp-util-django
 
-Gulp helpers for django.
+Gulp helpers for Django.
 
 ## Usage example
 
@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 var apps = ['blog', 'shop'];
 
 // Initialize project with apps in current directory.
-var project = new Django.porject(gulp, apps, __dirname);
+var project = new django.Porject(gulp, apps, __dirname);
 
 // Load gulpfiles from declared apps.
 project.discoverApps();
