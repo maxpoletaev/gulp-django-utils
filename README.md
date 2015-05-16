@@ -1,4 +1,4 @@
-# gulp-util-django
+# gulp-django
 
 Gulp helpers for Django.
 
@@ -7,7 +7,7 @@ Gulp helpers for Django.
 Create `django-project/gulpfile.js`:
 
 ```js
-var django = require('gulp-util-django');
+var django = require('gulp-django');
 
 // Initialize application list for processing.
 var apps = ['blog', 'shop'];
@@ -30,7 +30,7 @@ project.task('js', function() {
 Then create `django-project/blog/gulpfile.js`:
 
 ```js
-var django = require('gulp-util-django');
+var django = require('gulp-django');
 
 module.exports = function(project) {
   // Initialize application in project.
