@@ -1,15 +1,30 @@
 {
-  "name": "gulp-django",
-  "version": "0.0.1",
+  "name": "gulp-django-utils",
+  "description": "Gulp helpers for Django",
+  "keywords": [
+    "gulpplugin",
+    "django"
+  ],
+  "version": "0.1.0",
   "main": "./index.js",
   "author": {
     "name": "Maxim Poletaev",
     "email": "zenwalker2@gmail.com",
     "url": "http://zenwalker.ru"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/zenwalker/gulp-django.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenwalker/gulp-django-utils.git"
   },
-  "license": "MIT"
+  "bugs": {
+    "url": "https://github.com/zenwalker/gulp-django-utils/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
 }
