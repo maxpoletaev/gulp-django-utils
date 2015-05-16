@@ -7,14 +7,13 @@ Gulp helpers for Django.
 Create `django-project/gulpfile.js`:
 
 ```js
-var gulp = require('gulp'),
-    django = require('gulp-util-django');
+var django = require('gulp-util-django');
 
 // Initialize application list for processing.
 var apps = ['blog', 'shop'];
 
 // Initialize project with apps in current directory.
-var project = new django.Porject(gulp, apps, __dirname);
+var project = new django.Porject(apps);
 
 // Load gulpfiles from declared apps.
 project.discoverApps();
