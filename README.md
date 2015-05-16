@@ -49,5 +49,5 @@ module.exports = function(project) {
 Run:
 
 ```sh
-gulp js
+$ gulp js
 ```
