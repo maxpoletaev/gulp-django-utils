@@ -1,5 +1,5 @@
 {
-  "name": "gulp-django",
+  "name": "gulp-django-utils",
   "description": "Gulp helpers for Django",
   "keywords": [
     "gulpplugin",
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zenwalker/gulp-django.git"
+    "url": "https://github.com/zenwalker/gulp-django-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/zenwalker/gulp-django/issues"
+    "url": "https://github.com/zenwalker/gulp-django-utils/issues"
   },
   "license": "MIT",
   "devDependencies": {
