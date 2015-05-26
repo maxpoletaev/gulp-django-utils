@@ -31,8 +31,8 @@ describe('project', function() {
   });
 
   it('appsPath()', function() {
-    var actual = project.appsPath('gulpfile.js');
-    var expected = [path.join(cwd, appName, 'gulpfile.js')];
+    var actual = project.appsPath('static/{app}/index.css');
+    var expected = [path.join(cwd, appName, 'static', appName, 'index.css')];
     assert.deepEqual(actual, expected);
   });
 
