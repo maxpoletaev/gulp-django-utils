@@ -2,7 +2,7 @@
 
 Gulp helpers for Django.
 
-## Usage example
+## Usage
 
 Create `django-project/gulpfile.js`:
 
@@ -38,7 +38,7 @@ var concat = require('gulp-concat');
 module.exports = function(project) {
   // Initialize application in project.
   var app = new django.Application('blog', project);
-  
+
   // Create task in application namespace.
   app.task('js', function() {
     // Take all `.js` files from `django-project/blog/static/blog/js`,
@@ -49,3 +49,35 @@ module.exports = function(project) {
   });
 };
 ```
+
+## API
+
+### Application
+
+#### .task(name [, deps, fn])
+
+#### .src(glob [, opts])
+
+#### .static(glob [, opts])
+
+#### .watch(glob [, opts, tasks])
+
+#### .dest(path [, opts])
+
+### Project
+
+#### .appsPath(path)
+
+#### .appPath(appName, path, fn)
+
+#### .innerTasks(taskName)
+
+#### .discoverApps()
+
+#### .src(glob [, opts])
+
+#### .dest(path [, opts])
+
+#### .task(name [, deps, fn])
+
+#### .watch(glob [, opts, tasks])
