@@ -1,8 +1,10 @@
+var path = require('path');
+var gulp = require('gulp');
+var assert = require('assert');
+var streamAssert = require('stream-assert');
+
+var Application = require('../lib/application');
 var Project = require('../lib/project')
-  , Application = require('../lib/application')
-  , assert = require('assert')
-  , path = require('path')
-  , gulp = require('gulp');
 
 var appName = 'mainapp';
 var emptyFn = (function() {});
@@ -11,9 +13,9 @@ var cwd = path.join(__dirname, 'fixtures/django-project');
 var project = new Project([appName], { cwd: cwd });
 var app = new Application(appName, project);
 
-describe('app', function() {
+describe('Application', function() {
   it('task()', function() {
-    var expected = [appName, appName + ':' + 'task']
+    var expected = [appName, appName + ':' + 'task'];
 
     app.task('default', emptyFn);
     assert.ok(expected[0] in gulp.tasks);
@@ -21,9 +23,19 @@ describe('app', function() {
     app.task('task', emptyFn);
     assert.ok(expected[1] in gulp.tasks);
   });
+
+  it('static()', function(done) {
+    app.static('index.css')
+      .pipe(streamAssert.length(1))
+      .pipe(streamAssert.first(function(d) {
+        assert.equal(d.contents.toString(), '/* index.css */\n');
+      }))
+      .pipe(streamAssert.end(done))
+    ;
+  });
 });
 
-describe('project', function() {
+describe('Project', function() {
   it('appPath()', function() {
     var actual = project.appPath(appName, 'gulpfile.js');
     var expected = path.join(cwd, appName, 'gulpfile.js');

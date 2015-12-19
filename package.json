@@ -9,7 +9,7 @@
   "main": "./index.js",
   "author": {
     "name": "Maxim Poletaev",
-    "email": "zenwalker2@gmail.com",
+    "email": "max.poletaev@gmail.com",
     "url": "http://zenwalker.ru"
   },
   "repository": {
@@ -22,7 +22,8 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.8.11",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "stream-assert": "^2.0.3"
   },
   "scripts": {
     "test": "mocha"
