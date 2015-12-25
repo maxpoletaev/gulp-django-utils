@@ -52,7 +52,7 @@ module.exports = function(project) {
 
 ## API
 
-### Application
+### Application(name, project)
 
 #### .task(name [, deps, fn])
 
@@ -64,7 +64,7 @@ module.exports = function(project) {
 
 #### .dest(path [, opts])
 
-### Project
+### Project(apps)
 
 #### .appsPath(path)
 
