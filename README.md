@@ -16,9 +16,6 @@ var apps = ['blog', 'shop'];
 // Initialize project with apps in current directory.
 var project = new django.Project(apps);
 
-// Load gulpfiles from declared apps.
-project.discoverApps();
-
 // Create a task which depends on the same tasks in apps.
 project.task('js', function() {
   // Take all `.js` files from `django-project/static/main/js`,
